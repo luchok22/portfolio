@@ -1,0 +1,69 @@
+main span{
+    transform: rotate(-90deg);
+}
+main .row + .row img{
+    width: 100%;
+}
+header a{
+    font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #828282;
+    text-decoration: none;
+}
+.container div a:hover{
+    color: black;
+}
+header img{
+    height: 80%;
+}
+.home{
+    border-bottom: 1px solid #828282    ;
+}
+.home{  
+    align-items: center;
+}
+
+.container .home{
+    height: 10vh;
+}
+.aboutMe{
+     background-color: #f6f6f6;
+     margin: 10vh 0;
+     padding: 10vh 0;
+     }
+.skills .container>.row{
+    height: 70vh;
+}
+.skills{
+    padding-bottom: 10vh;
+}
+.portfolio iframe{
+    height: 70vh;
+}
+.aaa button{
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+
+}
+.portfolio p{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.footer .container .group{
+    margin-left: 420px;
+}
+@media (max-width: 576px) {
+    .footer .container .group{
+        margin-left: 100px;
+        flex-wrap: wrap;
+        display: flex;
+        width: 50%;
+    }
+    .portfolio .container p{
+        font-size: 30px;
+    }
+}
