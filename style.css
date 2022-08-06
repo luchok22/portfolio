@@ -24,7 +24,53 @@ header img{
 .home{  
     align-items: center;
 }
-
+.aaa a{
+    border: 2px solid black;
+    position: relative;
+    padding: 10px 30px;
+    margin: 45px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.arrow img{
+    width: 3%;
+}
+.aaa a::before{
+    position: relative;
+    top: -1px;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.aaa a::after{
+    position: relative;
+    top: -1px;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.aaa a:hover::before, a:hover::after{
+   width: 100%;
+   height: 100%;
+    transition-delay: 0s;
+}
+.aaa a:hover{
+    border: 2px solid black;
+    background: white;
+    color: white;
+    box-shadow: 0 0 50px black;
+    transition-delay: 0.5s;
+}
 .container .home{
     height: 10vh;
 }
@@ -42,17 +88,16 @@ header img{
 .portfolio iframe{
     height: 70vh;
 }
-.aaa button{
+.aaa a{
+    border-radius: 10px;
+    padding: 5px 5px;
     color: white;
-    background-color: black;
-    border-radius: 15px;
-
+    text-decoration: none;
 }
 .portfolio p{
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
-
 .footer .container .group{
     margin-left: 420px;
 }
@@ -62,8 +107,21 @@ header img{
         flex-wrap: wrap;
         display: flex;
         width: 50%;
+        height: 15%;
     }
     .portfolio .container p{
         font-size: 30px;
+    }
+    .port{
+        margin-top: 20vh;
+    }
+    .lol{
+        flex-direction: column;
+    }
+    .group .col{
+        width: 40%;
+    }
+    .arrow img{
+        width: 10%;
     }
 }
