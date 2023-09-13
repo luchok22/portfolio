@@ -1,9 +1,9 @@
 import Image from "next/image";
-
+import { StaticImageData } from 'next/image';
 interface ProjectCardProps {
   title: string;
   link: string;
-  img: string;
+  img: StaticImageData;
 }
 
 const ProjectCard = ({ title, link, img }: ProjectCardProps) => {
